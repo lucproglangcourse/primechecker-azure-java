@@ -2,8 +2,6 @@ package edu.luc.cs.cs371.primechecker.web;
 
 import com.microsoft.azure.functions.*;
 
-import edu.luc.cs.cs371.primechecker.HelloFunction;
-
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
