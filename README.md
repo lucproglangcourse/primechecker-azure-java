@@ -1,6 +1,6 @@
-# Synopsis
+## primechecker-azure-java
 
-An Azure Function for checking whether or not a number is prime.
+An Azure Function implemented in Java for checking whether or not a number is prime.
 
 ## Learning objectives
 
