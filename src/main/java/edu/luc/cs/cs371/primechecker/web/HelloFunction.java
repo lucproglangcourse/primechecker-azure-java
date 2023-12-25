@@ -1,4 +1,4 @@
-package edu.luc.cs.cs371.primechecker;
+package edu.luc.cs.cs371.primechecker.web;
 
 import com.microsoft.azure.functions.ExecutionContext;
 import com.microsoft.azure.functions.HttpMethod;
@@ -14,13 +14,13 @@ import java.util.Optional;
 /**
  * Azure Functions with HTTP Trigger.
  */
-public class PrimeCheckerFunction {
+public class HelloFunction {
     /**
      * This function listens at endpoint "/api/Hello". Two ways to invoke it using "curl" command in bash:
      * 1. curl -d "HTTP Body" {your host}/api/Hello
      * 2. curl "{your host}/api/Hello?name=HTTP%20Query"
      */
-    @FunctionName("isPrime")
+    @FunctionName("Hello")
     public HttpResponseMessage run(
             @HttpTrigger(
                 name = "req",
@@ -31,13 +31,13 @@ public class PrimeCheckerFunction {
         context.getLogger().info("Java HTTP trigger processed a request.");
 
         // Parse query parameter
-        final String query = request.getQueryParameters().get("number");
-        final String number = request.getBody().orElse(query);
+        final var query = request.getQueryParameters().get("name");
+        final var name = request.getBody().orElse(query);
 
-        if (number == null) {
+        if (name == null) {
             return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("Please pass a name on the query string or in the request body").build();
         } else {
-            return request.createResponseBuilder(HttpStatus.OK).body("Hello, " + number).build();
+            return request.createResponseBuilder(HttpStatus.OK).body("Hello, " + name).build();
         }
     }
 }

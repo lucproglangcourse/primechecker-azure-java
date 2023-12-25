@@ -1,4 +1,4 @@
-package edu.luc.cs.cs371.primechecker;
+package edu.luc.cs.cs371.primechecker.web;
 
 import com.microsoft.azure.functions.*;
 

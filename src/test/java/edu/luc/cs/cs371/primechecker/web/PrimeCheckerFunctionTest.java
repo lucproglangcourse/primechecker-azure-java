@@ -1,6 +1,7 @@
-package edu.luc.cs.cs371.primechecker;
+package edu.luc.cs.cs371.primechecker.web;
 
 import com.microsoft.azure.functions.*;
+
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
@@ -14,40 +15,49 @@ import static org.mockito.Mockito.*;
 
 
 /**
- * Unit test for HelloFunction class.
+ * Unit test for PrimeCheckerunction class.
  */
 public class PrimeCheckerFunctionTest {
     /**
      * Unit test for HttpTriggerJava method.
      */
     @Test
-    public void testHttpTriggerJava() throws Exception {
+    public void test6007() throws Exception {
+        assertEquals(HttpStatus.OK, runPrimeCheckerFunction("6007"));
+    }
+
+    @Test
+    public void test6008() throws Exception {
+        assertEquals(HttpStatus.NOT_FOUND, runPrimeCheckerFunction("6008"));
+    }
+    
+    private HttpStatusType runPrimeCheckerFunction(final String numberString) throws Exception {
         // Setup
         @SuppressWarnings("unchecked")
         final HttpRequestMessage<Optional<String>> req = mock(HttpRequestMessage.class);
 
-        final Map<String, String> queryParams = new HashMap<>();
-        queryParams.put("number", "6007");
+        final var queryParams = new HashMap<String, String>();
+        queryParams.put("number", numberString);
         doReturn(queryParams).when(req).getQueryParameters();
 
-        final Optional<String> queryBody = Optional.empty();
+        final var queryBody = Optional.<String>empty();
         doReturn(queryBody).when(req).getBody();
 
         doAnswer(new Answer<HttpResponseMessage.Builder>() {
             @Override
             public HttpResponseMessage.Builder answer(InvocationOnMock invocation) {
-                HttpStatus status = (HttpStatus) invocation.getArguments()[0];
+                final var status = (HttpStatus) invocation.getArguments()[0];
                 return new HttpResponseMessageMock.HttpResponseMessageBuilderMock().status(status);
             }
         }).when(req).createResponseBuilder(any(HttpStatus.class));
 
-        final ExecutionContext context = mock(ExecutionContext.class);
+        final var context = mock(ExecutionContext.class);
         doReturn(Logger.getGlobal()).when(context).getLogger();
 
         // Invoke
-        final HttpResponseMessage ret = new PrimeCheckerFunction().run(req, context);
+        final var ret = new PrimeCheckerFunction().run(req, context);
 
-        // Verify
-        assertEquals(HttpStatus.OK, ret.getStatus());
+        // Return status
+        return ret.getStatus();
     }
 }

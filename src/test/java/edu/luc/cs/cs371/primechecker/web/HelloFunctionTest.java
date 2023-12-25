@@ -1,6 +1,7 @@
-package edu.luc.cs.cs371.primechecker;
+package edu.luc.cs.cs371.primechecker.web;
 
 import com.microsoft.azure.functions.*;
+
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
@@ -26,26 +27,26 @@ public class HelloFunctionTest {
         @SuppressWarnings("unchecked")
         final HttpRequestMessage<Optional<String>> req = mock(HttpRequestMessage.class);
 
-        final Map<String, String> queryParams = new HashMap<>();
+        final var queryParams = new HashMap<String, String>();
         queryParams.put("name", "Azure");
         doReturn(queryParams).when(req).getQueryParameters();
 
-        final Optional<String> queryBody = Optional.empty();
+        final var queryBody = Optional.<String>empty();
         doReturn(queryBody).when(req).getBody();
 
         doAnswer(new Answer<HttpResponseMessage.Builder>() {
             @Override
             public HttpResponseMessage.Builder answer(InvocationOnMock invocation) {
-                HttpStatus status = (HttpStatus) invocation.getArguments()[0];
+                final var status = (HttpStatus) invocation.getArguments()[0];
                 return new HttpResponseMessageMock.HttpResponseMessageBuilderMock().status(status);
             }
         }).when(req).createResponseBuilder(any(HttpStatus.class));
 
-        final ExecutionContext context = mock(ExecutionContext.class);
+        final var context = mock(ExecutionContext.class);
         doReturn(Logger.getGlobal()).when(context).getLogger();
 
         // Invoke
-        final HttpResponseMessage ret = new HelloFunction().run(req, context);
+        final var ret = new HelloFunction().run(req, context);
 
         // Verify
         assertEquals(HttpStatus.OK, ret.getStatus());
