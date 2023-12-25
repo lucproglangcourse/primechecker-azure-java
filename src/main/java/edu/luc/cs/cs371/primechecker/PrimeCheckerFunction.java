@@ -19,9 +19,9 @@ import java.util.Optional;
  */
 public class PrimeCheckerFunction {
     /**
-     * This function listens at endpoint "/api/Hello". Two ways to invoke it using "curl" command in bash:
-     * 1. curl -d "HTTP Body" {your host}/api/Hello
-     * 2. curl "{your host}/api/Hello?name=HTTP%20Query"
+     * This function listens at endpoint "/api/isPrime". Two ways to invoke it using "curl" command in bash:
+     * 1. curl -d "HTTP Body" {your host}/api/isPrime
+     * 2. curl "{your host}/api/isPrime?number=HTTP%20Query"
      */
     @FunctionName("isPrime")
     public HttpResponseMessage run(
