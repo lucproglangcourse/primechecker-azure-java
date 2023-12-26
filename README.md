@@ -6,6 +6,8 @@ An Azure Function implemented in Java for checking whether or not a number is pr
 
 [![Build and deploy Java project to Azure Function App - primechecker](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/main_primechecker.yml/badge.svg)](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/main_primechecker.yml)
 
+[![CodeQL](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/github-code-scanning/codeql)
+
 ## Learning objectives
 
 - Show how CPU-intensive computation can be off-loaded from a mobile app to
