@@ -10,7 +10,6 @@ An Azure Function implemented in Java for checking whether or not a number is pr
 ![Commit Activity](https://img.shields.io/github/commit-activity/m/lucproglangcourse/primechecker-azure-java)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/lucproglangcourse/primechecker-azure-java.svg)](http://isitmaintained.com/project/lucproglangcourse/primechecker-azure-java "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/lucproglangcourse/primechecker-azure-java.svg)](http://isitmaintained.com/project/lucproglangcourse/primechecker-azure-java "Percentage of issues still open")
-
 - Structural  
 [![CodeQL](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml/badge.svg)](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml)
 ![Code Size](https://img.shields.io/github/languages/code-size/lucproglangcourse/primechecker-azure-java)
@@ -18,7 +17,6 @@ An Azure Function implemented in Java for checking whether or not a number is pr
 [![Maintainability](https://img.shields.io/codeclimate/maintainability/lucproglangcourse/primechecker-azure-java)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java/maintainability)
 [![Technical Debt](https://img.shields.io/codeclimate/tech-debt/lucproglangcourse/primechecker-azure-java)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java/trends/technical_debt)
 [![CodeFactor](https://img.shields.io/codefactor/grade/github/lucproglangcourse/primechecker-azure-java)](https://www.codefactor.io/repository/github/lucproglangcourse/primechecker-azure-java)
-
 - Other  
 [![License](http://img.shields.io/:license-apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
