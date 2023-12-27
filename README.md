@@ -5,21 +5,25 @@ An Azure Function implemented in Java for checking whether or not a number is pr
 ## Build status
 
 - Dynamic
-[![7-day Uptime Azure](https://img.shields.io/uptimerobot/ratio/7/m796031558-dca4663f9bf08f06224b02a3)](https://primechecker.azurewebsites.net/api/isPrime)
-[![Build and deploy Java project to Azure Function App - primechecker](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/main_primechecker.yml/badge.svg)](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/main_primechecker.yml)
-![Commit Activity](https://img.shields.io/github/commit-activity/m/lucproglangcourse/primechecker-azure-java)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/lucproglangcourse/primechecker-azure-java.svg)](http://isitmaintained.com/project/lucproglangcourse/primechecker-azure-java "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/lucproglangcourse/primechecker-azure-java.svg)](http://isitmaintained.com/project/lucproglangcourse/primechecker-azure-java "Percentage of issues still open")
+
+  [![7-day Uptime Azure](https://img.shields.io/uptimerobot/ratio/7/m796031558-dca4663f9bf08f06224b02a3)](https://primechecker.azurewebsites.net/api/isPrime)
+  [![Build and deploy Java project to Azure Function App - primechecker](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/main_primechecker.yml/badge.svg)](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/main_primechecker.yml)
+  ![Commit Activity](https://img.shields.io/github/commit-activity/m/lucproglangcourse/primechecker-azure-java)
+  [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/lucproglangcourse/primechecker-azure-java.svg)](http://isitmaintained.com/project/lucproglangcourse/primechecker-azure-java "Average time to resolve an issue")
+  [![Percentage of issues still open](http://isitmaintained.com/badge/open/lucproglangcourse/primechecker-azure-java.svg)](http://isitmaintained.com/project/lucproglangcourse/primechecker-azure-java "Percentage of issues still open")
 
 - Structural
-[![CodeQL](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml/badge.svg)](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml)
-![Code Size](https://img.shields.io/github/languages/code-size/lucproglangcourse/primechecker-azure-java)
-[![codecov](https://img.shields.io/codecov/c/github/lucproglangcourse/primechecker-azure-java)](https://codecov.io/gh/lucproglangcourse/primechecker-azure-java)[![Codacy Badge](https://img.shields.io/codacy/grade/20f5854f50c94a448968683ad33a687f)](https://www.codacy.com/gh/lucproglangcourse/primechecker-azure-java/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucproglangcourse/primechecker-azure-java&amp;utm_campaign=Badge_Grade)
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/lucproglangcourse/primechecker-azure-java)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java/maintainability)
-[![Technical Debt](https://img.shields.io/codeclimate/tech-debt/lucproglangcourse/primechecker-azure-java)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java/trends/technical_debt)
-[![CodeFactor](https://img.shields.io/codefactor/grade/github/lucproglangcourse/primechecker-azure-java)](https://www.codefactor.io/repository/github/lucproglangcourse/primechecker-azure-java)
 
-[![License](http://img.shields.io/:license-apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+  [![CodeQL](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml/badge.svg)](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml)
+  ![Code Size](https://img.shields.io/github/languages/code-size/lucproglangcourse/primechecker-azure-java)
+  [![codecov](https://img.shields.io/codecov/c/github/lucproglangcourse/primechecker-azure-java)](https://codecov.io/gh/lucproglangcourse/primechecker-azure-java)[![Codacy Badge](https://img.shields.io/codacy/grade/20f5854f50c94a448968683ad33a687f)](https://www.codacy.com/gh/lucproglangcourse/primechecker-azure-java/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucproglangcourse/primechecker-azure-java&amp;utm_campaign=Badge_Grade)
+  [![Maintainability](https://img.shields.io/codeclimate/maintainability/lucproglangcourse/primechecker-azure-java)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java/maintainability)
+  [![Technical Debt](https://img.shields.io/codeclimate/tech-debt/lucproglangcourse/primechecker-azure-java)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java/trends/technical_debt)
+  [![CodeFactor](https://img.shields.io/codefactor/grade/github/lucproglangcourse/primechecker-azure-java)](https://www.codefactor.io/repository/github/lucproglangcourse/primechecker-azure-java)
+
+- Other
+
+  [![License](http://img.shields.io/:license-apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 
 ## Learning objectives
