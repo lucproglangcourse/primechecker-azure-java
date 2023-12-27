@@ -20,12 +20,38 @@ An Azure Function implemented in Java for checking whether or not a number is pr
 See also the
 [corresponding mobile app](https://github.com/LoyolaChicagoCode/primenumbers-android-scala).
 
-## Prerequisites
+## How to use
+
+To use, put the number to be checked in the query string of the deployed function, e.g.
+
+    https://primechecker.azurewebsites.net/api/isPrime?number=7
+
+
+### Some sample primes to try
+
+- [1013](https://primechecker.azurewebsites.net/api/isPrime?number=1013)
+- [10007](https://primechecker.azurewebsites.net/api/isPrime?number=10007)
+- [100003](https://primechecker.azurewebsites.net/api/isPrime?number=100003)
+- [1000003](https://primechecker.azurewebsites.net/api/isPrime?number=1000003)
+- [10000169](https://primechecker.azurewebsites.net/api/isPrime?number=10000169)
+- [100000007](https://primechecker.azurewebsites.net/api/isPrime?number=100000007)
+- [1000000000169](https://primechecker.azurewebsites.net/api/isPrime?number=1000000000169)
+- [100000000000169](https://primechecker.azurewebsites.net/api/isPrime?number=100000000000169)
+
+### Some non-primes to try
+
+- [999989](https://primechecker.azurewebsites.net/api/isPrime?number=999989)
+- [Long.MAX_VALUE](https://primechecker.azurewebsites.net/api/isPrime?number=9223372036854775807)
+- [10000000000000000169](https://primechecker.azurewebsites.net/api/isPrime?number=10000000000000000169)
+- [2 * Long.MAX_VALUE + 3](https://primechecker.azurewebsites.net/api/isPrime?number=18446744073709551617)
+
+## Development
+
+### Prerequisites
 
 See [Quickstart: Create a Java function in Azure from the command line](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-java).
 
-
-## How to use
+### Building and testing locally
 
 Test with
 
@@ -37,18 +63,26 @@ Run locally with
 
 and use via the provided local URLs.
 
-## Sample prime numbers to try
+### Managing via the Azure portal
 
-- [1013](https://primechecker.azurewebsites.net/api/isPrime?number=1013)
-- [10007](https://primechecker.azurewebsites.net/api/isPrime?number=10007)
-- [100003](https://primechecker.azurewebsites.net/api/isPrime?number=100003)
-- [1000003](https://primechecker.azurewebsites.net/api/isPrime?number=1000003)
-- [10000169](https://primechecker.azurewebsites.net/api/isPrime?number=10000169)
-- [100000007](https://primechecker.azurewebsites.net/api/isPrime?number=100000007)
+Visit the [Function App](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites/kind/functionapp) section of the Azure portal.
 
-## Sample non-prime numbers to try
+A function app can have one or more functions.
+Drill into a specific function:
 
-- [999989](https://primechecker.azurewebsites.net/api/isPrime?number=999989)
+    Home > Function App > primechecker > isPrime
+
+In it's *Code + Test* section, you can verify the mapping between the function's published entry point and the corresponding method implementation:
+
+    "entryPoint": "edu.luc.cs.cs371.primechecker.web.PrimeCheckerFunction.run",
+
+<img src="doc/images/config.png" alt="JSON configuration for isPrime function" width="600"/>
+
+There, you can press the *Test/Run* button to interact directly with the function:
+
+<img src="doc/images/input.png" alt="JSON configuration for isPrime function" width="240"/>
+
+<img src="doc/images/output.png" alt="JSON configuration for isPrime function" width="240"/>
 
 ## References
 
