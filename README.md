@@ -16,8 +16,7 @@ An Azure Function implemented in Java for checking whether or not a number is pr
 [![CodeQL](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml/badge.svg)](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/daea3df369bf457396bd7782a18a9aed)](https://app.codacy.com/gh/lucproglangcourse/primechecker-azure-java/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![CodeFactor](https://img.shields.io/codefactor/grade/github/lucproglangcourse/primechecker-azure-java)](https://www.codefactor.io/repository/github/lucproglangcourse/primechecker-azure-java)
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/lucproglangcourse/primechecker-azure-java)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java/maintainability)
-[![Technical Debt](https://img.shields.io/codeclimate/tech-debt/lucproglangcourse/primechecker-azure-java)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java/trends/technical_debt)
+[![Maintainability](https://api.codeclimate.com/v1/badges/575c060038f9f9640200/maintainability)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java)
 - Other  
 [![License](http://img.shields.io/:license-apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
