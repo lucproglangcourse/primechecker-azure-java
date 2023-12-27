@@ -11,9 +11,9 @@ An Azure Function implemented in Java for checking whether or not a number is pr
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/lucproglangcourse/primechecker-azure-java.svg)](http://isitmaintained.com/project/lucproglangcourse/primechecker-azure-java "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/lucproglangcourse/primechecker-azure-java.svg)](http://isitmaintained.com/project/lucproglangcourse/primechecker-azure-java "Percentage of issues still open")
 - Structural  
-[![CodeQL](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml/badge.svg)](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml)
 ![Code Size](https://img.shields.io/github/languages/code-size/lucproglangcourse/primechecker-azure-java)
 [![codecov](https://img.shields.io/codecov/c/github/lucproglangcourse/primechecker-azure-java)](https://codecov.io/gh/lucproglangcourse/primechecker-azure-java)
+[![CodeQL](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml/badge.svg)](https://github.com/lucproglangcourse/primechecker-azure-java/actions/workflows/codeql.yml)
 [![Codacy Badge](https://img.shields.io/codacy/grade/20f5854f50c94a448968683ad33a687f)](https://www.codacy.com/gh/lucproglangcourse/primechecker-azure-java/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucproglangcourse/primechecker-azure-java&amp;utm_campaign=Badge_Grade)
 [![Maintainability](https://img.shields.io/codeclimate/maintainability/lucproglangcourse/primechecker-azure-java)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java/maintainability)
 [![Technical Debt](https://img.shields.io/codeclimate/tech-debt/lucproglangcourse/primechecker-azure-java)](https://codeclimate.com/github/lucproglangcourse/primechecker-azure-java/trends/technical_debt)
