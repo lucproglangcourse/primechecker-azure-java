@@ -2,9 +2,9 @@ package edu.luc.cs.cs371.primechecker.core;
 
 import java.math.BigInteger;
 
-public enum PrimeChecker {;
+public interface PrimeChecker {
 
-    public static boolean isPrimeSlow(final BigInteger i) {
+    static boolean isPrimeSlow(final BigInteger i) {
         final var compareToTwo = i.compareTo(BigInteger.TWO);
         if (compareToTwo < 0) {
             return false;
