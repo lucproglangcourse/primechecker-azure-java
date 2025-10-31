@@ -62,7 +62,10 @@ To use, put the number to be checked in the query string of the deployed functio
 
 ### Prerequisites
 
-See [Quickstart: Create a Java function in Azure from the command line](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-java).
+- Azure CLI: `brew install azure-cli`
+- Azure Functions Core Tools: `brew tap azure/functions && brew install azure-functions-core-tools@4`
+
+See also [Quickstart: Create a Java function in Azure from the command line](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-java).
 
 ### Building and testing locally
 
